@@ -53,7 +53,6 @@ function Filme(){
 
     }
   
-
     if(loading){
         return(
             <div className='filme-info'>
@@ -68,7 +67,7 @@ function Filme(){
             <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title} />
             <h3>Sinopse</h3>
             <span>{filme.overview}</span>
-            <strong>Avaliação: {filme.vote_average} / 10</strong>
+            <strong>Avaliação: <i>{filme.vote_average}</i> / 10</strong>
             <div className='area-buttons'>
                 <button onClick={saveMovies}>Salvar</button>
                 <button>
